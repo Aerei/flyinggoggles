@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>피자주문서</title>
+</head>
+<body>
+    <h2>피자 주문하기</h2>
+    <hr />
+    <form action="pizza.php">
+        <p>고객 명 : <input type="text" name="name"><br>
+        <p>전화번호 : <input type="text" name="phone"><br>
+        <p>E-mail : <input type="text" name="email"><br>
+            <p><select name="menu">
+                <option value="pz1">하와이안피자</option>
+                <option value="pz2">페퍼로니피자</option>
+                <option value="pz3">불고기피자</option>
+                <option value="pz4">치즈피자</option>
+            </select>
+        <fieldset style="width: 300px">
+            <legend>피자 사이즈</legend>
+            <p><input type="radio" name="size" value="small"> small <br>
+            <p><input type="radio" name="size" value="Medium"> Medium <br>
+            <p><input type="radio" name="size" value="Large"> Large <br>
+        </fieldset>
+        <fieldset style="width: 300px" name="toping">
+            <legend>토핑 선택</legend>
+            <p><input type="checkbox" name="bacon"> 베이컨 <br>
+            <p><input type="checkbox" name="cheese"> 치즈 <br>
+            <p><input type="checkbox" name="onion"> 양파 <br>
+            <p><input type="checkbox" name="mushroom"> 버섯
+        </fieldset>
+        <p>희망배송시간 : <input type="time" id="day" name="time"> <br>
+        <p>배송시 요청사항 : <textarea name="requests" id="req" cols="20" rows="2"></textarea> <br>
+        <p><input type="submit" value="주문하기"> <input type="reset" value="다시 선택하기">
+    </form>
+</body>
+</html>
