@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스에 그림자 만들기</title>
+    <style>
+        .redBox, .blurBox, .multiEffect {
+            width : 103px;
+            height : 69px;
+            padding : 10px;
+            border : 10px solid lightgray;
+            background-image : url("../image/shadow_image.jpg");
+            background-size : 123px 89px;
+            background-repeat : no-repeat;
+        }
+        .redBox {
+            box-shadow : 10px 10px red;
+        }
+        .blurBox {
+            box-shadow : 10px 10px 5px skyblue;
+        }
+        .multiEffect {
+            box-shadow: 2px 2px 2px black,
+                        0 0 25px blue,
+                        0 0 5px darkblue;
+        }
+        div {
+            border : 1px solid red;
+            cursor: pointer;
+        }
+        span {
+            border: 1px solid blue;
+            display: block;
+        }
+        #nodis {
+            display: none;
+        }
+        #bin {
+            display: inline;
+        }
+        #binb {
+            display: inline-block;
+            height: 50px;
+            width:  500px;
+        }
+    </style>
+</head>
+<body>
+    <h3>박스에 그림자 만들기</h3>
+    <hr>
+    <div class="redBox">별궤적</div><br>
+    <div class="blurBox">별궤적</div><br>
+    <div class="multiEffect">별궤적</div><br>
+    <div>커서모양</div>
+    <div>커서모양2</div>
+    <span>커서모양</span>
+    <span>커서모양2</span>
+    나는 <div id="nodis">div(none)</div> 입니다. <br>
+    나는 <div id="bin">div(inline)</div> 입니다. <br>
+    나는 <div id="binb">div(inline-block)</div> 입니다. <br>
+    나는 <div>div <span>span(block)</span>입니다.</div>
+</body>
+</html>
